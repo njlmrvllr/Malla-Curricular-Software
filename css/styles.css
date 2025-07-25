@@ -1,0 +1,35 @@
+/* css/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.cycle {
+  margin-bottom: 40px;
+}
+
+.course {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course.unlocked {
+  background-color: #90ee90; /* Verde claro cuando está desbloqueado */
+}
+
+.course.approved {
+  text-decoration: line-through;
+  background-color: #90ee90; /* Fondo verde cuando está aprobado */
+}
+
+.course:hover {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
