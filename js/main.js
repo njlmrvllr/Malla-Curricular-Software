@@ -14,8 +14,8 @@ function loadCourses() {
 
     courseElement.innerHTML = `
       <span>${course.name}</span>
-      <span>Créditos: ${course.credits}</span>
     `;
+//      <span>Créditos: ${course.credits}</span>
 
     cycleElement.appendChild(courseElement);
 

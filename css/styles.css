@@ -1,8 +1,13 @@
-/* css/styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
 
 body {
   font-family: "Roboto", sans-serif;
   margin: 20px;
+  background-color: #E1F5FE;
 }
 
 #content {
@@ -14,36 +19,55 @@ body {
 }
 
 .cycle {
-  margin-bottom: 20px;
   text-align: center;
 }
 
-.cycle .course span:first-child {
-  display: block; /* Hace que el primer <span> ocupe toda la línea */
-  margin-bottom: 10px; /* Ajusta el espacio entre el nombre y los créditos */
-}
-
 .course {
+  display: flex;           
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;
+  color: #01579B;
+  width: 80%;            
+  height: 70px;          
   margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 15px;
+  border: 1px solid #e1f5ff;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #FFFFFF;
+  border-radius: 8px;      
+  box-shadow: 0 2px 10px rgba(3, 1, 126, 0.104);
 }
-
 .course.unlocked {
-  background-color: #90ee90; /* Verde claro cuando está desbloqueado */
+  background-color: #FFF9C4  ; 
+  color: #013c69;
+  border-color: #fbf4af ;
 }
 
 .course.approved {
   text-decoration: line-through;
-  background-color: #90ee90; /* Fondo verde cuando está aprobado */
+  background-color: #a8d4ff ;
+  color: #013c69;
+  border: #a8d4ff;
 }
 
 .course:hover {
-  background-color: #f0f0f0;
+  background-color: #ecf9ff;
+  color: #013e6d; 
 }
 
 h1 {
-  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2.5rem; 
+  color: #0069a5; 
+  text-align: center; 
+  letter-spacing: 1px;   
+  text-shadow: 2px 2px 4px rgba(40, 42, 192, 0.3);
 }
+h2{
+  font-family: 'Montserrat', sans-serif; 
+  color: #0277BD ;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
